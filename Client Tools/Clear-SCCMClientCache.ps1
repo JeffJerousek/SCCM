@@ -4,13 +4,14 @@
 .DESCRIPTION
     Clears all Packages from the Configuration Manager Client Cache.
 .EXAMPLE
-    .\clear-ClientCache.ps1
+    Clear-SCCMClientCache -computer CMP1
 .NOTES
     Author: David O'Brien, david.obrien@sepago.de
     Version: 1.0
     Change history
         07.02.2013 - first release
         Requirements: installed ConfigMgr Agent on local machine
+        v2 - Added computer and verbose(support) parameters
 #>
 function Clear-SCCMClientCache
 {
